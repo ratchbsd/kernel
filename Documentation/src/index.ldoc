@@ -1,0 +1,29 @@
+@title: RachBSD - Getting Started Index
+@toc
+
+# RachBSD OS Documentation + Welcome
+
+Welcome to the **RachBSD** Documentation, within this documentation you will find 
+every single file and code explained. We have a technical and a user documentation section,
+technical covers all code and aspects, while the user documentation section is more a manual on how to use the operating-system.
+
+This guide is important so you know how everything functions, on the outside and the inside.
+Regardless, let's get started with some information about the operating-system we're developing.
+
+## Why?
+
+You may ask why are you developing an operating-system from the ground up, well, i simply could not find the features in an operating-system that i wanted. So i've decided to take on thechallange and build my own. One of the features i was missing was full control. Of course, there are ways to get full hardware control inside a Linux host, but that would not be as fun as writing my own operating-system from the ground up.
+
+One thing to note is we do have Linux compatibility, so your Linux applications can also be ran on our operating-system regardless.
+
+## Features
+
+We're thinking of making it a sort of `hackable` operating system, which means that each aspect can be modified easily by the user or on request. We've thought about doing this, since enterprise users may need more features that we do not have. Like this we make it easy to add aditional features to the operating-system, and because we have an extremly thought-out documentation, users can do it without worrying about multiple other things.
+
+Even if something get's messed up while modifying the operating-system, we make it easy to restore your operating-systems state before it got broken, of course, user's will need to have the auto-backup enabled and a storage-pool configured where the backups will be sent to. Whenever that is done, the user is able to retrieve the backup using our backup-wizard's functionality and GUI. We have been thinking about this feature for a while, and i personally think it is an important feature for developers and for sure the low-level developers out there.
+
+We need to implement this feature as one of the first features, this is also handy for us - the core developers. So we do not need to re-install our system multiple times when a fault arrives, or when we have compile issues.
+
+The general outline of the operating-system is to make something easily recoverable and enterprise focussed. Of course, this does not mean you can not use this for non-enterprise usecases. You sure can.
+
+

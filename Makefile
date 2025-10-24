@@ -10,7 +10,7 @@ PYTHON = python3
 compile_docs:
 	@echo "Generating the documentation..."
 	make fetch_py_compiler
-	./$(PYTHON_COMPILER_PATH)/$(PYTHON_COMPILER) build $(DOCS_SRC_DIR) -o $(DOCS_DIR),
+	./$(PYTHON_COMPILER_PATH)/$(PYTHON_COMPILER) build $(DOCS_SRC_DIR) -o $(DOCS_DIR)
 
 fetch_py_compiler:
 	@echo "Checking if Python compiler is already fetched..."
@@ -19,7 +19,7 @@ fetch_py_compiler:
 		git clone https://github.com/ternicincl/libredoc-language.git ldoc; \
 		mkdir -p $(PYTHON_COMPILER_PATH); \
 		cp ldoc/ldoc.py ./$(PYTHON_COMPILER_PATH)/; \
-		cp -r ldoc/templates ./$(PYTHON_COMPILER_PATH)/; \
+		cp -r ldoc/templates ./; \
 		rm -rf ldoc; \
 	else \
 		echo "Python compiler already exists, skipping fetch."; \
